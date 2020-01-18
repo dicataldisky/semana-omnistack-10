@@ -10,7 +10,6 @@ module.exports = {
     // Filter By devs by techs
 
     const techsArray = parseStringAsArray(techs);
-
     const devs = await Dev.find({
       techs: {
         $in: techsArray, // Mongo operators
